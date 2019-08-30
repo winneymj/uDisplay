@@ -56,7 +56,7 @@ void ST7789Display::init(void)
 
 	// Set memory access control
 	buf[0] = ST77XX_MADCTL;
-	buf[1] = 0x08;
+	buf[1] = 0x00;
 	_interface.write(buf, 1, 2);
 	wait_ms(10);
 
